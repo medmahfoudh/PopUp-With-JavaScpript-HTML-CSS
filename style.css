@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Lato:wght@700&family=Plus+Jakarta+Sans:wght@300&family=Roboto+Condensed&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+
+
+.popup .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000b3;
+    z-index: 1;
+    display: none;
+}
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%) scale(0);
+    background: #fff;
+    border-radius: 20px;
+    width: 450px;
+    height: auto;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.popup .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size:25px ;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup.active .overlay{
+    display: block;
+}
+
+.popup.active .content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50% , -50%) scale(1);
+}
+
+@media only screen and (max-width: 600px) {
+    .popup .content{
+        width: 95vw;
+        height: auto;
+    }
+   .button{
+       margin: 0;
+   }
+    
+    
+}
+
+
+.button {
+    border: 2px solid #5312e1;
+    height: 80px;
+    width: 200px;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 500px;
+    margin-top: 250px;
+    box-shadow: 2px 2px 5px 1px rgba(83,33,230,0.38);
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(83,33,230,0.38);
+  -moz-box-shadow: 2px 2px 5px 1px rgba(83,33,230,0.38);
+    font-family: 'Lato' , sans-serif;
+
+  
+    
+  
+   
+   
+  }
+  
